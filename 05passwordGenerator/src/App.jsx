@@ -12,7 +12,7 @@ const [password,setPassword] = useState();
 const passwordRef = useRef(null);
 
 
-
+// password generator logic
 const passwordGenerator = useCallback(()=>{
   let pass = "";
   let str = "ABCDEFGHIJKLMNOPUVWXYZabcdefghijklmnopuvwxyz";
@@ -21,11 +21,14 @@ const passwordGenerator = useCallback(()=>{
 
   for(let i=1; i <=length; i++){
     let char = Math.floor(Math.random()*str.length + 1);
+    console.log(char);
+    
     pass += str.charAt(char);
   }
   setPassword(pass)
 }, [length, numberAllowed, charAllowed, setPassword])
 
+// copy 
 const copyPasswordToClipboard = useCallback(() => {
   passwordRef.current?.select();
   passwordRef.current?.setSelectionRange(0,99); // range in password for optimization
@@ -33,6 +36,7 @@ const copyPasswordToClipboard = useCallback(() => {
 
 },[password])
 
+// for running fn everytime the dependency changed
 useEffect(()=>{
   passwordGenerator()
 },[length, numberAllowed, charAllowed, passwordGenerator])
