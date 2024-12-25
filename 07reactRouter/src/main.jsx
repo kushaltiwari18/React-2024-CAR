@@ -28,6 +28,10 @@ import Github, {githubInfoLoader} from './components/Github/Github.jsx'
 //       {
 //         path: "contact",
 //         element: <Contact/>  
+//       },
+//       {
+//         path: "github",
+//         element: <Github/>  
 //       }
 //     ]
 //   }
