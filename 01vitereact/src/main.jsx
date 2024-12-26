@@ -7,13 +7,13 @@ import App from './App.jsx'
 
 // simple method execute
 
-// function MyApp(){
-//     return(
-//         <div>
-//             <h1>Custom App</h1>
-//         </div>
-//     )
-// }
+function MyApp(){
+    return(
+        <div>
+            <h1>Custom App</h1>
+        </div>
+    )
+}
 
 // test own custom structure tree || not working
 const ReactElement = {
@@ -44,10 +44,11 @@ const reactElement = React.createElement(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
-    ReactElement
+    // ReactElement
     // anotherElement
     // reactElement
     // <App/>
     // <MyApp/>
+    // MyApp()
 
 )
