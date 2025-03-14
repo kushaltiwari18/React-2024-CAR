@@ -12,7 +12,7 @@ const Card = (props) => {
 
         <h1 className=' border-2 border-green-400 bg-white text-black text-lg'>{props.userName}</h1>
         <h2 className='border-2'>{props.Obj}</h2>
-        <h3>{props.arrObj[0]}</h3>
+        <h3>{props.ArrObj[0]}</h3>
         
     </div>
   )

@@ -48,13 +48,13 @@ function App() {
       <div className="text-sky-500 dark:text-sky-400">
         Sarah Dayan
       </div>
-      <div class="text-slate-700 dark:text-slate-500">
+      <div className="text-slate-700 dark:text-slate-500">
         Staff Engineer, Algolia
       </div>
     </figcaption>
   </div>
 </figure>
-    {/* <Card userName="Sher" Obj={myObj.userNames} arrObj={newArr}/> */}
+    <Card userName="Sher" Obj={myObj.userNames} ArrObj={newArr}/>
     {/* <Card userName="Shah"/> */}
     </>
   )
